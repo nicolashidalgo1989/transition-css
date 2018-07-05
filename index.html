@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Experimento 1</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<style type="text/css">
+		body  	{ background: linear-gradient( #000, #101010);  height:100vh;}
+		.ball 	{ border-radius: 100px; width: 100px; height: 100px; background: black; margin:18px; margin: auto; position:absolute; top:0; bottom:0; right:0; left:0; box-shadow: 0px 0px 100px #fff; animation: blur 5s ease-in-out infinite; }
+		@keyframes blur {
+			0% {
+				box-shadow: 0px 0px  50px #fff
+			}
+			50% {
+				box-shadow: 0px 0px 200px #fff
+
+			}
+			100%{
+				box-shadow: 0px 0px  50px #fff 
+			}
+		} 
+	</style>
+</head>
+<body> 
+</body>
+<script type="text/javascript"> 
+	for(i=0;1>i;i++){
+		console.log(i);
+		const ball = document.createElement('div');
+		ball.classList.add('ball');
+		document.body.appendChild(ball);
+	}
+</script>
+</html>
